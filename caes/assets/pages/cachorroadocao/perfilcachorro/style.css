@@ -1,0 +1,19 @@
+#backButton {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#backButton:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#backButton img{
+    width: 70px !important;
+    height: 70px !important;
+}

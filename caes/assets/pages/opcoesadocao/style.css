@@ -1,0 +1,125 @@
+body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+#backButton {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#backButton img{
+    width: 70px !important;
+    height: 70px !important;
+}
+
+#backButton:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.mainContent {
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.optionsContent {
+    width: 40%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gatos {
+    background-image: url(./imgs/gatos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    background-position: center;
+    height: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05);
+    display: inline-flex;
+}
+
+.caes {
+    background-image: url(./imgs/cães.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 70%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05);
+    display: inline-flex;
+}
+
+.buttonLink{
+    width: 100%;
+    height: 100%;
+}
+
+.caes:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.gatos:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.buttonBg {
+    margin-left: 300px;
+}
+
+@media (width:1280px) and (height:720px) {
+    body{
+        width: 1280px;
+        height: 720px;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .mainContent{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menuContent{
+        width: 40%;
+    }
+
+    .optionsContent{
+        width: 100%;
+    }
+    .buttonBg{
+        width: 25%;
+    }
+
+}
